@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+
+      <pre style="color:White;font-size:30px;background-color:DimGray" >
+     Measles</pre>
+<pre style="color:DimGray;font-size:30px" >
+    Overview</pre>
+<pre style="color:DimGray;font-size:20px" >
+	Measles is a childhood infection caused by a virus. Once quite common, measles can now almost always be prevented with
+	a vaccine.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Symptoms</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Fever, Dry cough, Runny nose, Sore throat, Inflamed eyes (conjunctivitis), Tiny white spots with bluish-white centers
+	on a red background found inside the mouth on the inner lining of the cheek — also called Koplik's spots, and a skin rash
+	made up of large, flat blotches that often flow into one another.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Causes</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Measles is a highly contagious illness caused by a virus that replicates in the nose and throat of an infected child or
+	adult. Then, when someone with measles coughs, sneezes or talks, infected droplets spray into the air, where other
+	people can inhale them.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Risk factors</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Being unvaccinated, traveling internationally, and having a vitamin A deficiency.</pre>
+
+<a href="https://www.mayoclinic.org/diseases-conditions/measles/symptoms-causes/syc-20374857" class="button special" >Measles reference</a>
+
+        <pre style="color:DimGray;font-size:20px" >
+        <strong>DISCLAIMER</strong>
+        The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+        that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+        professionals regarding your susceptibility to different pathogens. </pre>

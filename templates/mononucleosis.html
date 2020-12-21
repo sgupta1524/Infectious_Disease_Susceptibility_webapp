@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+
+      <pre style="color:White;font-size:30px;background-color:DimGray" >
+     Mononucleosis</pre>
+<pre style="color:DimGray;font-size:30px" >
+    Overview</pre>
+<pre style="color:DimGray;font-size:20px" >
+	Infectious mononucleosis (mono) is often called the kissing disease. The virus that causes mono is transmitted through saliva,
+	so you can get it through kissing, but you can also be exposed by sharing a glass or food utensils with someone who has mono.
+	However, mononucleosis isn't as contagious as some infections, such as the common cold.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Symptoms</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Fatigue, sore throat, perhaps misdiagnosed as strep throat, that doesn't get better after treatment with antibiotics, fever,
+	swollen lymph nodes in your neck and armpits, swollen tonsils, headache, skin rash, soft, swollen spleen</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Causes</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	The most common cause of mononucleosis is the Epstein-Barr virus, but other viruses can also cause similar symptoms.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Risk factors</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Transmitted through saliva, sharing drinks/toothbrushes/utensils, sexual contact, blood transfusion, and organ transplant.</pre>
+
+<a href="https://www.mayoclinic.org/diseases-conditions/mononucleosis/symptoms-causes/syc-20350328" class="button special" >Mononucleosis reference 1</a>
+
+<a href="https://www.medicalnewstoday.com/articles/311932#causes" class="button special" >Mononucleosis reference 2</a>
+
+        <pre style="color:DimGray;font-size:20px" >
+        <strong>DISCLAIMER</strong>
+        The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+        that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+        professionals regarding your susceptibility to different pathogens. </pre>

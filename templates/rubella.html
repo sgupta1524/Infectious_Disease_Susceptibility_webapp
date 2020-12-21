@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+
+      <pre style="color:White;font-size:30px;background-color:DimGray" >
+     Rubella</pre>
+<pre style="color:DimGray;font-size:30px" >
+    Overview</pre>
+<pre style="color:DimGray;font-size:20px" >
+	Rubella is a contagious viral infection best known by its distinctive red rash. It's also called German measles or three-day
+	measles. While this infection may cause mild symptoms or even no symptoms in most people, it can cause serious problems for
+	unborn babies whose mothers become infected during pregnancy.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Symptoms</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Mild fever of 102 F or lower, headache, stuffy or runny nose, inflamed, red eyes, enlarged, tender lymph nodes at
+	the base of the skull, the back of the neck and behind the ears, a fine, pink rash that begins on the face and quickly
+	spreads to the trunk and then the arms and legs, before disappearing in the same sequence, aching joints, especially in
+	young women</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Causes</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Rubella is caused by a virus that's passed from person to person. It can spread when an infected person coughs or sneezes.
+	It can also spread by direct contact with an infected person's respiratory secretions, such as mucus. It can also be passed
+	on from pregnant women to their unborn children via the bloodstream.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Risk factors</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	In contact with ill individuals, lack of vaccination, encountering large crowds, and weakened immune system</pre>
+
+
+<a href="https://www.mayoclinic.org/diseases-conditions/rubella/symptoms-causes/syc-20377310" class="button special" >Rubella reference 1</a>
+<a href="https://ajph.aphapublications.org/doi/10.2105/ajph.69.3.279?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed&" class="button special" >Rubella reference 2</a>
+
+        <pre style="color:DimGray;font-size:20px" >
+        <strong>DISCLAIMER</strong>
+        The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+        that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+        professionals regarding your susceptibility to different pathogens. </pre>

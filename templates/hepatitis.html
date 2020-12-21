@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+
+      <pre style="color:White;font-size:30px;background-color:DimGray" >
+     Hepatitis</pre>
+<pre style="color:DimGray;font-size:30px" >
+    Overview</pre>
+<pre style="color:DimGray;font-size:20px" >
+	Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of
+	hepatitis viruses that cause inflammation and affect your liver's ability to function.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Symptoms</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Fatigue, sudden nausea and vomiting, abdominal pain or discomfort, especially on the upper right side beneath your lower
+	ribs (by your liver), clay-colored bowel movements, loss of appetite, low-grade fever, dark urine, joint pain, yellowing
+	of the skin and the whites of your eyes (jaundice), and intense itching</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Causes</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Hepatitis A is caused by a virus that infects liver cells and causes inflammation. The inflammation can affect how your
+	liver works and cause other signs and symptoms of hepatitis A.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Risk factors</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Travel or work in areas of the world where hepatitis A is common, attend child care or work in a child care center,
+	live with another person who has hepatitis A, are a man who has sexual contact with other men, have any type of sexual
+	contact with someone who has hepatitis A, are HIV positive, are experiencing homelessness, have a clotting-factor
+	disorder, such as hemophilia, use any type of illegal drugs (not just those that are injected)</pre>
+
+<a href="https://www.mayoclinic.org/diseases-conditions/hepatitis-a/symptoms-causes/syc-20367007" class="button special" >Hepatitis reference</a>
+
+
+        <pre style="color:DimGray;font-size:20px" >
+        <strong>DISCLAIMER</strong>
+        The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+        that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+        professionals regarding your susceptibility to different pathogens. </pre>

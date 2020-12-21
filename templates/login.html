@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+      <center>
+        <p style="color:DimGray;font-size:20px" >Ready to learn more about your susceptibility to infectious diseases?</p>
+        <p style="color:DimGray;font-size:20px" >All you have to do is enter your email address and your .vcf or 23andme file and we will take it from here!</p>
+				<a style="color:DimGray;font-size:20px"href="{{ url_for('static', filename='files/23andMe_example.tsv') }}" download="23andMe_example.tsv">Example 23andMe input file</a>
+				<a style="color:DimGray;font-size:20px"href="{{ url_for('static', filename='files/AncestryDNA-2.txt') }}" download="AncestryDNA-2.txt">Example Ancestry input file</a>
+				<a style="color:DimGray;font-size:20px"href="{{ url_for('static', filename='files/37_Z_Miller_Chrom_Autoso_20190228.csv') }}" download="37_Z_Miller_Chrom_Autoso_20190228.csv">Example FamilyTreeDNA input file</a>
+      </center>
+
+		<form class = 'input' action='/upload' method="post" enctype="multipart/form-data">
+				<label for="ancestry" style=color:DimGray;font-size:20px;background-color:DimGray">Please select your ancestry group:</label>
+				<a href="https://www.internationalgenome.org/category/population/">More info about selecting your ancestry group</a>
+				<select id="ancestry" name="ancestry" size="3">
+					<option value="EUR">European (EUR)</option>
+					<option value="AFR">African (AFR)</option>
+					<option value="AMR">Ad Mixed American (AMR)</option>
+					<option value="EAS">European (EAS)</option>
+					<option value="SAS">South Asian (SAS)</option>
+				</select><br><br>
+        <label for="email" style=color:DimGray;font-size:20px;background-color:DimGray">Enter your email:</label>
+        <input type="text" id="email" name="email" required>
+        <input type="file" id="file1" name="file1" required>
+        <button type="submit" name="Submit"><b style="color:White">Submit</b></button>
+      </form>
+<!--		<script>-->
+<!--		console.log("API WORKING***********************************")-->
+<!--		   function callREST() {-->
+<!--            var formData = new FormData();-->
+<!--			formData.append("file1", document.getElementById("myFile").files[0]);-->
+<!--&lt;!&ndash;			var xhr = new XMLHttpRequest();&ndash;&gt;-->
+<!--&lt;!&ndash;			xhr.open("POST", "http://localhost:5000/upload");&ndash;&gt;-->
+<!--&lt;!&ndash;			xhr.send(formData);&ndash;&gt;-->
+<!--const response = await fetch('http:localhost:5000/upload', {-->
+<!--        method: 'POST',-->
+<!--        headers: { 'Content-Type': 'application/json' },-->
+<!--        body: JSON.stringify(Object.fromEntries(formData))-->
+<!--    });-->
+<!--    const result = await response.json();-->
+<!--    console.log(result)-->
+<!--			}-->
+<!--        </script>-->
+      <pre style="color:DimGray;font-size:20px" >
+      <strong>DISCLAIMER</strong>
+      The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+      that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+      professionals regarding your susceptibility to different pathogens. </pre>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+
+      <pre style="color:White;font-size:30px;background-color:DimGray" >
+     Urinary tract infection</pre>
+<pre style="color:DimGray;font-size:30px" >
+    Overview</pre>
+<pre style="color:DimGray;font-size:20px" >
+	A urinary tract infection (UTI) is an infection in any part of your urinary system — your kidneys, ureters, bladder and urethra.
+	Most infections involve the lower urinary tract — the bladder and the urethra.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Symptoms</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	A strong, persistent urge to urinate, a burning sensation when urinating, passing frequent, small amounts of urine, urine that
+	appears cloudy, urine that appears red, bright pink or cola-colored — a sign of blood in the urine, strong-smelling urine, and pelvic
+	pain, in women — especially in the center of the pelvis and around the area of the pubic bone.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Causes</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Urinary tract infections typically occur when bacteria enter the urinary tract through the urethra and begin to multiply in the bladder.
+	Although the urinary system is designed to keep out such microscopic invaders, these defenses sometimes fail. When that happens, bacteria
+	may take hold and grow into a full-blown infection in the urinary tract.</pre>
+
+<pre style="color:DimGray;font-size:30px" >
+    Risk factors</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Female anatomy, sexual activity, certain types of birth control, menopause, urinary tract abnormalities, blockages in the urinary tract,
+  a suppressed immune system, catheter use, and a recent urinary procedure.</pre>
+
+
+<a href="https://www.mayoclinic.org/diseases-conditions/urinary-tract-infection/symptoms-causes/syc-20353447" class="button special" >Urinary tract infection reference</a>
+
+        <pre style="color:DimGray;font-size:20px" >
+        <strong>DISCLAIMER</strong>
+        The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+        that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+        professionals regarding your susceptibility to different pathogens. </pre>

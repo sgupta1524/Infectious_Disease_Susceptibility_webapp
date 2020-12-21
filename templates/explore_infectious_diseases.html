@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+			<!-- First row -->
+				<section id="two" class="wrapper style1 special">
+					<div class="inner">
+						<header>
+							<h2>Explore infectious disease phenotypes</h2>
+						</header>
+						<div class="flex flex-4">
+							<div class="box person">
+								<div class="image round">
+									<img src="{{ url_for('static', filename='images/chickenpox.jpg') }}" alt="Person 1" />
+								</div>
+								<h3>Chickenpox</h3>
+								<footer>
+									<a href="{{ url_for('chicken_pox') }}" class="button special">Learn more</a>
+									<a href="https://www.cdc.gov/chickenpox/about/index.html" class="button special" >CDC page</a>
+								</footer>
+							</div>
+							<div class="box person">
+								<div class="image round">
+									<img src="{{ url_for('static', filename='images/cold_sores.jpg') }}" alt="Person 2" />
+								</div>
+								<h3>Cold sores</h3>
+								<footer>
+									<a href="{{ url_for('cold_sores') }}" class="button special">Learn more</a>
+									<a href="https://www.cdc.gov/std/herpes/stdfact-herpes-detailed.htm" class="button special" >CDC page</a>
+								</footer>
+							</div>
+							<div class="box person">
+								<div class="image round">
+									<img src="{{ url_for('static', filename='images/ear_infection.jpg') }}" alt="Person 3" />
+								</div>
+								<h3>Childhood ear infection</h3>
+								<footer>
+									<a href="{{ url_for('childhood_ear_infection') }}" class="button special">Learn more</a>
+									<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/ear-infection.html" class="button special" >CDC page</a>
+								</footer>
+							</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Second row -->
+					<section id="two" class="wrapper style1 special">
+						<div class="inner">
+							<div class="flex flex-4">
+								<div class="box person">
+									<div class="image round">
+										<img src="{{ url_for('static', filename='images/plantar_warts.jpg') }}" alt="Person 1" />
+									</div>
+									<h3>Plantar warts</h3>
+									<footer>
+										<a href="{{ url_for('plantar_warts') }}" class="button special">Learn more</a>
+										<a href="https://www.cdc.gov/std/hpv/stdfact-hpv.htm" class="button special" >CDC page</a>
+									</footer>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="{{ url_for('static', filename='images/mumps.jpg') }}" alt="Person 2" />
+									</div>
+									<h3>Mumps</h3>
+									<footer>
+										<a href="{{ url_for('mumps') }}" class="button special">Learn more</a>
+										<a href="https://www.cdc.gov/mumps/index.html" class="button special" >CDC page</a>
+									</footer>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="{{ url_for('static', filename='images/pneumonia.jpg') }}" alt="Person 3" />
+									</div>
+									<h3>Pneumonia</h3>
+									<footer>
+										<a href="{{ url_for('penumonia') }}" class="button special">Learn more</a>
+										<a href="https://www.cdc.gov/pneumonia/" class="button special" >CDC page</a>
+									</footer>
+								</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Third row -->
+						<section id="two" class="wrapper style1 special">
+							<div class="inner">
+								<div class="flex flex-4">
+									<div class="box person">
+										<div class="image round">
+											<img src="{{ url_for('static', filename='images/tuberculosis.jpg') }}" alt="Person 1" />
+										</div>
+										<h3>Tuberculosis</h3>
+										<footer>
+											<a href="{{ url_for('tuberculosis') }}" class="button special">Learn more</a>
+											<a href="https://www.cdc.gov/tb/default.htm" class="button special" >CDC page</a>
+										</footer>
+									</div>
+									<div class="box person">
+										<div class="image round">
+											<img src="{{ url_for('static', filename='images/scarlet_fever.jpg') }}" alt="Person 2" />
+										</div>
+										<h3>Scarlet fever</h3>
+										<footer>
+											<a href="{{ url_for('scarlet_fever') }}" class="button special">Learn more</a>
+											<a href="https://www.cdc.gov/groupastrep/diseases-public/scarlet-fever.html" class="button special" >CDC page</a>
+										</footer>
+									</div>
+									<div class="box person">
+										<div class="image round">
+											<img src="{{ url_for('static', filename='images/shingles.jpg') }}" alt="Person 3" />
+										</div>
+										<h3>Shingles</h3>
+										<footer>
+											<a href="{{ url_for('shingles') }}" class="button special">Learn more</a>
+											<a href="https://www.cdc.gov/shingles/index.html" class="button special" >CDC page</a>
+										</footer>
+									</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Fourth row -->
+							<section id="two" class="wrapper style1 special">
+								<div class="inner">
+									<div class="flex flex-4">
+										<div class="box person">
+											<div class="image round">
+												<img src="{{ url_for('static', filename='images/bladder_infection.jpeg') }}" alt="Person 1" />
+											</div>
+											<h3>Bladder infection</h3>
+											<footer>
+												<a href="{{ url_for('bladder_infection') }}" class="button special">Learn more</a>
+												<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/uti.html" class="button special" >CDC page</a>
+											</footer>
+										</div>
+										<div class="box person">
+											<div class="image round">
+												<img src="{{ url_for('static', filename='images/hepatitis.jpg') }}" alt="Person 2" />
+											</div>
+											<h3>Hepatitis</h3>
+											<footer>
+												<a href="{{ url_for('hepatitis') }}" class="button special">Learn more</a>
+												<a href="https://www.cdc.gov/hepatitis/index.htm" class="button special" >CDC page</a>
+											</footer>
+										</div>
+										<div class="box person">
+											<div class="image round">
+												<img src="{{ url_for('static', filename='images/chronic_sinus_infection.jpg') }}" alt="Person 3" />
+											</div>
+											<h3>Chronic sinus infection</h3>
+											<footer>
+												<a href="{{ url_for('chronic_sinus_infection') }}" class="button special">Learn more</a>
+												<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/sinus-infection.html" class="button special" >CDC page</a>
+											</footer>
+										</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<!-- Fifth row -->
+								<section id="two" class="wrapper style1 special">
+									<div class="inner">
+										<div class="flex flex-4">
+											<div class="box person">
+												<div class="image round">
+													<img src="{{ url_for('static', filename='images/common_cold.jpg') }}" alt="Person 1" />
+												</div>
+												<h3>The common cold</h3>
+												<footer>
+													<a href="{{ url_for('common_cold') }}" class="button special">Learn more</a>
+													<a href="https://www.cdc.gov/features/rhinoviruses/index.html" class="button special" >CDC page</a>
+												</footer>
+											</div>
+											<div class="box person">
+												<div class="image round">
+													<img src="{{ url_for('static', filename='images/gingivitis.jpg') }}" alt="Person 2" />
+												</div>
+												<h3>Gingivitis</h3>
+												<footer>
+													<a href="{{ url_for('gingivitis') }}" class="button special">Learn more</a>
+													<a href="https://www.cdc.gov/oralhealth/conditions/periodontal-disease.html" class="button special" >CDC page</a>
+												</footer>
+											</div>
+											<div class="box person">
+												<div class="image round">
+													<img src="{{ url_for('static', filename='images/strep_throat.jpg') }}" alt="Person 3" />
+												</div>
+												<h3>Strep throat</h3>
+												<footer>
+													<a href="{{ url_for('strep_throat') }}" class="button special">Learn more</a>
+													<a href="https://www.cdc.gov/groupastrep/diseases-public/strep-throat.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Ffeatures%2Fstrepthroat%2Findex.html" class="button special" >CDC page</a>
+												</footer>
+											</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+
+								<!-- Sixth row -->
+									<section id="two" class="wrapper style1 special">
+										<div class="inner">
+											<div class="flex flex-4">
+												<div class="box person">
+													<div class="image round">
+														<img src="{{ url_for('static', filename='images/urinary_tract_infection.jpg') }}" alt="Person 1" />
+													</div>
+													<h3>Urinary tract infection</h3>
+													<footer>
+														<a href="{{ url_for('urinary_tract_infection') }}" class="button special">Learn more</a>
+														<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/uti.html" class="button special" >CDC page</a>
+													</footer>
+												</div>
+												<div class="box person">
+													<div class="image round">
+														<img src="{{ url_for('static', filename='images/measles.jpg') }}" alt="Person 2" />
+													</div>
+													<h3>Measles</h3>
+													<footer>
+														<a href="{{ url_for('measles') }}" class="button special">Learn more</a>
+														<a href="https://www.cdc.gov/measles/index.html" class="button special" >CDC page</a>
+													</footer>
+												</div>
+												<div class="box person">
+													<div class="image round">
+														<img src="{{ url_for('static', filename='images/intestinal_parasites.jpg') }}" alt="Person 3" />
+													</div>
+													<h3>Intestinal parasites</h3>
+													<footer>
+														<a href="{{ url_for('intestinal_parasites') }}" class="button special">Learn more</a>
+														<a href="https://www.cdc.gov/parasites/index.html" class="button special" >CDC page</a>
+													</footer>
+												</div>
+												</div>
+											</div>
+										</div>
+									</section>
+
+									<!-- Seventh row -->
+										<section id="two" class="wrapper style1 special">
+											<div class="inner">
+												<div class="flex flex-4">
+													<div class="box person">
+														<div class="image round">
+															<img src="{{ url_for('static', filename='images/rheumatic_fever.jpg') }}" alt="Person 1" />
+														</div>
+														<h3>Rheumatic fever</h3>
+														<footer>
+															<a href="{{ url_for('rheumatic_fever') }}" class="button special">Learn more</a>
+															<a href="https://www.cdc.gov/groupastrep/diseases-public/rheumatic-fever.html" class="button special" >CDC page</a>
+														</footer>
+													</div>
+													<div class="box person">
+														<div class="image round">
+															<img src="{{ url_for('static', filename='images/mononucleosis.jpg') }}" alt="Person 2" />
+														</div>
+														<h3>Mononucleosis</h3>
+														<footer>
+															<a href="{{ url_for('mononucleosis') }}" class="button special">Learn more</a>
+															<a href="https://www.cdc.gov/epstein-barr/index.html" class="button special" >CDC page</a>
+														</footer>
+													</div>
+													<div class="box person">
+														<div class="image round">
+															<img src="{{ url_for('static', filename='images/rubella.jpg') }}" alt="Person 3" />
+														</div>
+														<h3>Rubella</h3>
+														<footer>
+															<a href="{{ url_for('rubella') }}" class="button special">Learn more</a>
+															<a href="https://www.cdc.gov/rubella/index.html" class="button special" >CDC page</a>
+														</footer>
+													</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+										<!-- Eieghth row -->
+											<section id="two" class="wrapper style1 special">
+												<div class="inner">
+													<div class="flex flex-4">
+														<div class="box person">
+															<div class="image round">
+																<img src="{{ url_for('static', filename='images/covid.jpg') }}" alt="Person 1" />
+															</div>
+															<h3>COVID-19</h3>
+															<footer>
+																<a href="{{ url_for('covid_19') }}" class="button special">Learn more</a>
+																<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="button special" >CDC page</a>
+															</footer>
+														</div>
+														<div class="box person">
+															<div class="image round">
+																<img src="{{ url_for('static', filename='images/myringitis.jpg') }}" alt="Person 2" />
+															</div>
+															<h3>Myringitis</h3>
+															<footer>
+																<a href="{{ url_for('myringitis') }}" class="button special">Learn more</a>
+																<a href="https://phinvads.cdc.gov/vads/developersGuide.actionhttp://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=1090961000119107" class="button special" >CDC page</a>
+															</footer>
+														</div>
+														<div class="box person">
+															<div class="image round">
+																<img src="{{ url_for('static', filename='images/tonsillitis.jpg') }}" alt="Person 3" />
+															</div>
+															<h3>Tonsillitis</h3>
+															<footer>
+																<a href="{{ url_for('tonsillitis') }}" class="button special">Learn more</a>
+																<a href="https://www.cdc.gov/dotw/strepthroat/index.html" class="button special" >CDC page</a>
+															</footer>
+														</div>
+														</div>
+													</div>
+												</div>
+											</section>
+
+
+<pre style="color:DimGray;font-size:20px" >
+	<strong>DISCLAIMER</strong>
+	The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+	that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+	professionals regarding your susceptibility to different pathogens. </pre>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+					</center>
+				</section>
+
+
+      <pre style="color:DimGray;font-size:30px" >
+     PRISTINE Technology</pre>
+      <pre style="color:DimGray;font-size:20px" >
+        <strong>The Problem</strong> - Everyone is genetically different, thus, to no surprise individuals
+        can respond differently to infectious diseases. Currently, there is a lack of
+        understanding of how infectious diseases will impact an individual based on
+        their genetic information.</pre>
+
+
+      <pre style="color:DimGray;font-size:20px" >
+        <strong>The objective </strong> - To predict an individual's susceptibility to a wide range
+        of infectious diseases based on their genetic information. </pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	<strong>The biology </strong> - There are a number of factors that play a vital role in ones
+	susceptibility to infectious diseases. More specifically, the genetics of the
+	host (us!) can determine ones susceptibility to infectious. Case-control studies
+	that assess the association between genetic loci and infectious disease susceptibility
+	are on-the-rise. These studies help identify possible candidate genes associated with
+	infectious disease susceptibility. Our technology implements the use of two resources
+        that have information on genetic variants attributed with susceptibility to specific
+        infectious diseases like COVID-19, the chicken pox, measles, and more! <a href="https://pubmed.ncbi.nlm.nih.gov/17094741/" style="color:DimGray;font-size:20px" >Reference</a>.
+	In addition, blood type has been investigated to play a role in COVID-19 susceptibility
+	and outcome. For example, there have been reports of a protective effect in blood
+	group O and a higher risk in blood group A for severe covid-19 progression.<a href="https://www.medrxiv.org/content/10.1101/2020.09.04.20188318v1" style="color:DimGray;font-size:20px" >Reference</a>.</pre>
+
+      <pre style="color:DimGray;font-size:20px" >
+        <strong>Don't have your genetic information ready to input?</strong> No need to worry. You can
+        get your genotype file from various personal genomics companies like <a href="https://www.23andme.com" style="color:DimGray;font-size:20px" >23andMe</a>,
+        <a href="https://www.familytreedna.com/?intent=&gclid=Cj0KCQiA2af-BRDzARIsAIVQUOfUZA7qsLFhbv91_UJlktsKq0dGeYnEWrdte50ZIesFNQno_ErnuZwaAq_ZEALw_wcB" style="color:DimGray;font-size:20px" >FamilyTreeDNA</a>, and <a href="https://www.ancestry.com" style="color:DimGray;font-size:20px" >Ancestry</a>. </pre>
+      <pre style="color:DimGray;font-size:20px" >
+        <strong>The calculation</strong> - We will calculate a PRS score for each disease, using
+        the <a href="https://blog.23andme.com/wp-content/uploads/2013/10/GWAS-for-Susceptibility-to-Infection.pdf" style="color:DimGray;font-size:20px" >23andMe summary statistics</a> for all of the infectious diseases except COVID-19.
+	The PRS score for COVID-19 is calculated using the <a href="https://www.covid19hg.org/results/ " style="color:DimGray;font-size:20px" >COVID-19 host genetics initiative results</a>,
+	In addition, the blood group associated with an individual's genotype will be assessed and
+	reported in the COVID-19 susceptibility report. The user's genetic informaion will be converted
+	into percentiles for each inectious disease depending where on the PRS distribution they fall
+	for their particular ancestry.</pre>
+
+      <pre style="color:DimGray;font-size:20px" >
+        <strong>What is a polygenic risk score (PRS)?</strong> A PRS is an estimate of an individual's
+        genetic liability to a trait/phenotype/disease, calculated according to their genotype
+        profile and relevant genome-wide association study (GWAS) data.</pre>
+
+        <pre style="color:DimGray;font-size:20px" >
+        <strong>DISCLAIMER</strong>
+        The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+        that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+        professionals regarding your susceptibility to different pathogens. </pre>
+    </body>
+</html>

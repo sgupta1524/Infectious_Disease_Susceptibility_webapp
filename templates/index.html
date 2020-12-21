@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/87/DNA_orbit_animated_small.gif" style="height:100px;position:fixed;left:35px;top:35px;width:60px;border:none"
+            align="left"
+          />
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+				<center>
+					<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+	        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+			<iframe width="600" height="400" src="https://www.youtube.com/embed/ddV3W7bkCOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</center>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<header>
+								<h3>Over 20 phenotypes to explore, including COVID-19!</h3>
+							</header>
+							<p>Learn about your potential susceptibility to pathogens around the world based on your genetic information.</p>
+							<footer>
+								<a href="{{ url_for('explore_infectious_diseases') }}" class="button special">Learn more</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Why use our technology?<br /></h3>
+							</header>
+							<p>PRISTINE is a way for users to engage more with their genome by demonstrating how their genetic information alters their susceptibility to infectious diseases. </p>
+							<footer>
+								<a href="{{ url_for('our_technology') }}" class="button special">Learn more</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Susceptibility report<br /></h3>
+							</header>
+							<p>Each user will be provided with a susceptibility report that has information about their susceptibility to over 20 infectious disease phenotypes. </p>
+							<footer>
+								<a href="{{ url_for('login') }}" class="button special">Learn more</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Meet the team</h2>
+					</header>
+					<div class="flex flex-4">
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/allison_headshot.jpg') }}" alt="Person 1" />
+							</div>
+							<h3>Allison Rozanski</h3>
+							<p>M.S. Bioinformatics student at Georgia Tech</p>
+							<a href="mailto: arozanski3@gatech.edu" class="button special">Email</a>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/courtney_headshot.jpeg') }}" alt="Person 2" />
+							</div>
+							<h3>Courtney Astore</h3>
+							<p>Ph.D/M.S. Bioinformatics student at Georgia Tech</p>
+							<a href="mailto: courtneyastore@gatech.edu" class="button special">Email</a>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/sonali_headshot.jpeg') }}" alt="Person 3" />
+							</div>
+							<h3>Sonali Gupta</h3>
+							<p>M.S. Bioinformatics student at Georgia Tech</p>
+							<a href="mailto: sgupta671@gatech.edu" class="button special">Email</a>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+    <pre style="color:DimGray;font-size:20px" >
+    <strong>DISCLAIMER</strong>
+    The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+    that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+    professionals regarding your susceptibility to different pathogens. </pre>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

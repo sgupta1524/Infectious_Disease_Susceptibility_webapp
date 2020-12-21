@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PRISTINE - Susceptibility report</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('login') }}" class="logo" style="color:White;font-size:20px;background-color:#3D85C6" >  Create my susceptibility report  </a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}" style="color:White;font-size:20px;background-color:DimGray" >Home</a>
+						<a href="{{ url_for('our_technology') }}" style="color:White;font-size:20px;background-color:DimGray" >Our technology</a>
+						<a href="{{ url_for('explore_infectious_diseases') }}" style="color:White;font-size:20px;background-color:DimGray" >Explore infectious diseases</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<!-- Banner -->
+				<section id="banner" style="background-image: url({{ url_for('static', filename='images/banner.jpg') }})">
+					<center>
+						<h1 style="color:White;font-size:100px;background-color:DimGray;" >PRISTINE</h1>
+		        <p style="color:White;font-size:30px;background-color:DimGray" >Predicting your susceptibility to infectious diseases</p>
+						<p style="color:White;font-size:30px;background-color:#A93226" >Welcome to your infecttious disease susceptibility report</p>
+					</center>
+				</section>
+				
+
+<pre style="color:DimGray;font-size:20px" >
+	About the results:</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	Our results are presented in percentiles. A percentile is a number where a certain percentage
+	of scores fall below that number. Therefore if you are at a 50th percentile for a given infectious
+	disease, out of 100 normal people of your ancestry 50 will have a lower susceptibility score and
+	50 will have a higher susceptibility score. The susceptibility score is a genetic calculation that
+	weighs a person’s odds of contracting each infectious disease.</pre>
+
+<pre style="color:DimGray;font-size:20px" >
+	These percentiles are generated using SNPs from a 23andMe study that investigated the susceptibility
+	of individuals to a series of infectious diseases.</pre>
+
+<a href="https://blog.23andme.com/wp-content/uploads/2013/10/GWAS-for-Susceptibility-to-Infection.pdf" class="button special" >23andMe study paper</a>
+
+			<!-- First row -->
+				<section id="two" class="wrapper style1 special">
+					<div class="inner">
+						<header>
+							<h2>Explore your susceptibility to infectious disease phenotypes</h2>
+						</header>
+						<div class="flex flex-4">
+							<div class="box person">
+								<div class="image round">
+									<img src="images/79.jpg" alt="Person 1" />
+								</div>
+								<h3>Chickenpox</h3>
+								<footer>
+									<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for Chickenpox </p>
+									<a href="{{ url_for('chicken_pox') }}" class="button special">Learn more</a>
+									<a href="https://www.cdc.gov/chickenpox/about/index.html" class="button special" >CDC page</a>
+								</footer>
+							</div>
+							<div class="box person">
+								<div class="image round">
+									<img src="images/97.jpg" alt="Person 2" />
+								</div>
+								<h3>Cold sores</h3>
+								<footer>
+									<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Cold sores </p>
+									<a href="#" class="button special">Learn more</a>
+									<a href="https://www.cdc.gov/std/herpes/stdfact-herpes-detailed.htm" class="button special" >CDC page</a>
+								</footer>
+							</div>
+							<div class="box person">
+								<div class="image round">
+									<img src="images/64.jpg" alt="Person 3" />
+								</div>
+								<h3>Childhood ear infection</h3>
+								<footer>
+									<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for Childhood ear infection </p>
+									<a href="#" class="button special">Learn more</a>
+									<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/ear-infection.html" class="button special" >CDC page</a>
+								</footer>
+							</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Second row -->
+					<section id="two" class="wrapper style1 special">
+						<div class="inner">
+							<div class="flex flex-4">
+								<div class="box person">
+									<div class="image round">
+										<img src="images/97.jpg" alt="Person 1" />
+									</div>
+									<h3>Plantar warts</h3>
+									<footer>
+										<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Plantar warts </p>
+										<a href="#" class="button special">Learn more</a>
+										<a href="https://www.cdc.gov/std/hpv/stdfact-hpv.htm" class="button special" >CDC page</a>
+									</footer>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="images/64.jpg" alt="Person 2" />
+									</div>
+									<h3>Mumps</h3>
+									<footer>
+										<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for Mumps </p>
+										<a href="#" class="button special">Learn more</a>
+										<a href="https://www.cdc.gov/mumps/index.html" class="button special" >CDC page</a>
+									</footer>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="images/79.jpg" alt="Person 3" />
+									</div>
+									<h3>Pneumonia</h3>
+									<footer>
+										<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for Pneumonia </p>
+										<a href="#" class="button special">Learn more</a>
+										<a href="https://www.cdc.gov/pneumonia/" class="button special" >CDC page</a>
+									</footer>
+								</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Third row -->
+						<section id="two" class="wrapper style1 special">
+							<div class="inner">
+								<div class="flex flex-4">
+									<div class="box person">
+										<div class="image round">
+											<img src="images/64.jpg" alt="Person 1" />
+										</div>
+										<h3>Tuberculosis</h3>
+										<footer>
+											<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for Tuberculosis </p>
+											<a href="#" class="button special">Learn more</a>
+											<a href="https://www.cdc.gov/tb/default.htm" class="button special" >CDC page</a>
+										</footer>
+									</div>
+									<div class="box person">
+										<div class="image round">
+											<img src="images/97.jpg" alt="Person 2" />
+										</div>
+										<h3>Scarlet fever</h3>
+										<footer>
+											<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Scarlet fever </p>
+											<a href="#" class="button special">Learn more</a>
+											<a href="https://www.cdc.gov/groupastrep/diseases-public/scarlet-fever.html" class="button special" >CDC page</a>
+										</footer>
+									</div>
+									<div class="box person">
+										<div class="image round">
+											<img src="images/79.jpg" alt="Person 3" />
+										</div>
+										<h3>Shingles</h3>
+										<footer>
+											<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for Shingles </p>
+											<a href="#" class="button special">Learn more</a>
+											<a href="https://www.cdc.gov/shingles/index.html" class="button special" >CDC page</a>
+										</footer>
+									</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Fourth row -->
+							<section id="two" class="wrapper style1 special">
+								<div class="inner">
+									<div class="flex flex-4">
+										<div class="box person">
+											<div class="image round">
+												<img src="images/97.jpg" alt="Person 1" />
+											</div>
+											<h3>Bladder infection</h3>
+											<footer>
+												<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Bladder infection </p>
+												<a href="#" class="button special">Learn more</a>
+												<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/uti.html" class="button special" >CDC page</a>
+											</footer>
+										</div>
+										<div class="box person">
+											<div class="image round">
+												<img src="images/79.jpg" alt="Person 2" />
+											</div>
+											<h3>Hepatitis</h3>
+											<footer>
+												<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for Hepatitis </p>
+												<a href="#" class="button special">Learn more</a>
+												<a href="https://www.cdc.gov/hepatitis/index.htm" class="button special" >CDC page</a>
+											</footer>
+										</div>
+										<div class="box person">
+											<div class="image round">
+												<img src="images/64.jpg" alt="Person 3" />
+											</div>
+											<h3>Chronic sinus infection</h3>
+											<footer>
+												<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for Chronic sinus infection</p>
+												<a href="#" class="button special">Learn more</a>
+												<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/sinus-infection.html" class="button special" >CDC page</a>
+											</footer>
+										</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<!-- Fifth row -->
+								<section id="two" class="wrapper style1 special">
+									<div class="inner">
+										<div class="flex flex-4">
+											<div class="box person">
+												<div class="image round">
+													<img src="images/64.jpg" alt="Person 1" />
+												</div>
+												<h3>The common cold</h3>
+												<footer>
+													<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for the common cold </p>
+													<a href="#" class="button special">Learn more</a>
+													<a href="https://www.cdc.gov/features/rhinoviruses/index.html" class="button special" >CDC page</a>
+												</footer>
+											</div>
+											<div class="box person">
+												<div class="image round">
+													<img src="images/97.jpg" alt="Person 2" />
+												</div>
+												<h3>Gingivitis</h3>
+												<footer>
+													<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Gingivitis </p>
+													<a href="#" class="button special">Learn more</a>
+													<a href="https://www.cdc.gov/oralhealth/conditions/periodontal-disease.html" class="button special" >CDC page</a>
+												</footer>
+											</div>
+											<div class="box person">
+												<div class="image round">
+													<img src="images/79.jpg" alt="Person 3" />
+												</div>
+												<h3>Strep throat</h3>
+												<footer>
+													<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for strep throat </p>
+													<a href="#" class="button special">Learn more</a>
+													<a href="https://www.cdc.gov/groupastrep/diseases-public/strep-throat.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Ffeatures%2Fstrepthroat%2Findex.html" class="button special" >CDC page</a>
+												</footer>
+											</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+
+								<!-- Sixth row -->
+									<section id="two" class="wrapper style1 special">
+										<div class="inner">
+											<div class="flex flex-4">
+												<div class="box person">
+													<div class="image round">
+														<img src="images/97.jpg" alt="Person 1" />
+													</div>
+													<h3>Urinary tract infection</h3>
+													<footer>
+														<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Urinary tract infection </p>
+														<a href="#" class="button special">Learn more</a>
+														<a href="https://www.cdc.gov/antibiotic-use/community/for-patients/common-illnesses/uti.html" class="button special" >CDC page</a>
+													</footer>
+												</div>
+												<div class="box person">
+													<div class="image round">
+														<img src="images/79.jpg" alt="Person 2" />
+													</div>
+													<h3>Measles</h3>
+													<footer>
+														<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for Measles </p>
+														<a href="#" class="button special">Learn more</a>
+														<a href="https://www.cdc.gov/measles/index.html" class="button special" >CDC page</a>
+													</footer>
+												</div>
+												<div class="box person">
+													<div class="image round">
+														<img src="images/64.jpg" alt="Person 3" />
+													</div>
+													<h3>Intestinal parasites</h3>
+													<footer>
+														<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for intestinal parasites </p>
+														<a href="#" class="button special">Learn more</a>
+														<a href="https://www.cdc.gov/parasites/index.html" class="button special" >CDC page</a>
+													</footer>
+												</div>
+												</div>
+											</div>
+										</div>
+									</section>
+
+									<!-- Seventh row -->
+										<section id="two" class="wrapper style1 special">
+											<div class="inner">
+												<div class="flex flex-4">
+													<div class="box person">
+														<div class="image round">
+															<img src="images/97.jpg" alt="Person 1" />
+														</div>
+														<h3>Rheumatic fever</h3>
+														<footer>
+															<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Rheumatic fever </p>
+															<a href="#" class="button special">Learn more</a>
+															<a href="https://www.cdc.gov/groupastrep/diseases-public/rheumatic-fever.html" class="button special" >CDC page</a>
+														</footer>
+													</div>
+													<div class="box person">
+														<div class="image round">
+															<img src="images/64.jpg" alt="Person 2" />
+														</div>
+														<h3>Mononucleosis</h3>
+														<footer>
+															<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for Mononucleosis </p>
+															<a href="#" class="button special">Learn more</a>
+															<a href="https://www.cdc.gov/epstein-barr/index.html" class="button special" >CDC page</a>
+														</footer>
+													</div>
+													<div class="box person">
+														<div class="image round">
+															<img src="images/97.jpg" alt="Person 3" />
+														</div>
+														<h3>Rubella</h3>
+														<footer>
+															<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Rubella </p>
+															<a href="#" class="button special">Learn more</a>
+															<a href="https://www.cdc.gov/rubella/index.html" class="button special" >CDC page</a>
+														</footer>
+													</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+										<!-- Eieghth row -->
+											<section id="two" class="wrapper style1 special">
+												<div class="inner">
+													<div class="flex flex-4">
+														<div class="box person">
+															<div class="image round">
+																<img src="images/64.jpg" alt="Person 1" />
+															</div>
+															<h3>COVID-19</h3>
+															<footer>
+																<p > You are in the <strong style="color:White"> 64th percentile </strong>of risk for COVID-19 </p>
+																<a href="#" class="button special">Learn more</a>
+																<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="button special" >CDC page</a>
+															</footer>
+														</div>
+														<div class="box person">
+															<div class="image round">
+																<img src="images/97.jpg" alt="Person 2" />
+															</div>
+															<h3>Myringitis</h3>
+															<footer>
+																<p > You are in the <strong style="color:White"> 97th percentile </strong>of risk for Myringitis </p>
+																<a href="#" class="button special">Learn more</a>
+																<a href="https://phinvads.cdc.gov/vads/developersGuide.actionhttp://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=1090961000119107" class="button special" >CDC page</a>
+															</footer>
+														</div>
+														<div class="box person">
+															<div class="image round">
+																<img src="images/79.jpg" alt="Person 3" />
+															</div>
+															<h3>Tonsillitis</h3>
+															<footer>
+																<p > You are in the <strong style="color:White"> 79th percentile </strong>of risk for Tonsillitis </p>
+																<a href="#" class="button special">Learn more</a>
+																<a href="https://www.cdc.gov/dotw/strepthroat/index.html" class="button special" >CDC page</a>
+															</footer>
+														</div>
+														</div>
+													</div>
+												</div>
+											</section>
+
+
+<pre style="color:DimGray;font-size:20px" >
+	<strong>DISCLAIMER</strong>
+	The outputs of this pipeline are BIOINFORMATIC INFERENCES and are not experimentally validated. These results do not confirm
+	that you will have increased or decreased susceptibility but rather provide insight of the possibility. Please consult health
+	professionals regarding your susceptibility to different pathogens. </pre>
+
+	</body>
+</html>
